@@ -1,2 +1,3 @@
 # BSAD482-Decision-Intelligence-Portfolio
-My Decision Intelligence Portfolio for BSAD 482
+
+Logan Pugsley's Decision Intelligence Portfolio for BSAD 482
