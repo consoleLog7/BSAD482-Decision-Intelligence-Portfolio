@@ -10,31 +10,43 @@ The housing crisis stems from several converging factors, for example, supply ch
 
 ## Significance of the Study
 This decision intelligence analysis is both timely and crucial for several reasons:
+
 1. __Affordability Crisis__ The average price of housing in Canada has risen by over 30% since 2020, and residents across the country struggle to afford somewhere to live [[1]](#1). Although the problem is concerning both urban and rural areas, with housing costs rising everywhere from Toronto, Ontario to Antigonish, Nova Scotia, the problem is worsened in major cities, where prices continue to rise even higher [[2]](#2). 
+
 2. __Social and Health Implications__ Housing is a key social determinant of health that impacts risk for conditions including asthma, respiratory infections, poor mental health, and stress [[3]](#3).
+
 3. __Long-Term Impacts__ Housing insecurity makes existing socio-economic problems even worse, by exacerbating homelessness, mental health issues, and inequality, particularly among marginalized groups such as low-income families, minority populations, and Indigenous communities [[4]](#4).
+
 4. __Economic Ripple Effects__ The housing market and its current instability has far reaching impacts for Canada's overall economy, and economic recovery coming out of the Covid-19 pandemic (5). Housing diminishes consumer spending and can contribute to rising household debt, which can be drivers for a lagging gross domestic product (GDP) in Canada, its key economic measure [[5]](#5).
 
 
 ## Research Objectives
 This study aims to:
+
 1. Analyze key indicators that can impact supply, demand, and pricing for housing in Canada.
+
 2. Analyze the relationship between key housing indicators, including immigration and urbanization statistics.
+
 3. Identify the key determinants of Canada's housing crisis.
+
 4. Project future improvement or worsening of Canada's housing crisis, using key indicators, relationships, and determinants identified in the analysis.
 
 ## Potential Datasets
+Some potential datasets to be used in this study are:
+
 1. Canada Mortgage and Housing Corporation (CMHC), Housing Data Tables
    - Source: https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/housing-data/data-tables
    - Contents: Household characteristics data, housing market data, mortgage and debt data, rental market data, housing market indicators, Canadian Housing Survey Data Tables
    - Temporal coverage: 1990-2022
    - Geographic scope: Country-level data
+
 2. Statistics Canada, Housing Data & Indicators
    - Source: https://www150.statcan.gc.ca/n1/en/subjects/housing/
    - Contents: New Housing Price Index, investment in building construction, housing construction in all centres 10,000 and over, conventional mortgage lending rate 5-year term, newly completed dwellings
    - Temporal coverage: 1981-2024
    - Geographic scope: Country-level data
-2. Organisation for Economic Co-operation and Development (OECD), Affordable Housing Database
+
+3. Organisation for Economic Co-operation and Development (OECD), Affordable Housing Database
    - Source: https://www.oecd.org/en/data/datasets/oecd-affordable-housing-database.html
    - Contents: Affordable housing database that monitors access to good-quality affordable housing
    - Temporal coverage: 2010-2022
