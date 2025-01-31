@@ -17,7 +17,7 @@ This decision intelligence analysis is both timely and crucial for several reaso
 
 3. __Long-Term Impacts__ Housing insecurity makes existing socio-economic problems even worse, by exacerbating homelessness, mental health issues, and inequality, particularly among marginalized groups such as low-income families, minority populations, and Indigenous communities [[4]](#4).
 
-4. __Economic Ripple Effects__ The housing market and its current instability has far reaching impacts for Canada's overall economy, and economic recovery coming out of the Covid-19 pandemic (5). Housing diminishes consumer spending and can contribute to rising household debt, which can be drivers for a lagging gross domestic product (GDP) in Canada, its key economic measure [[5]](#5).
+4. __Economic Ripple Effects__ The housing market and its current instability has far reaching impacts for Canada's overall economy, and economic recovery coming out of the Covid-19 pandemic [[5]](5). Housing diminishes consumer spending and can contribute to rising household debt, which can be drivers for a lagging gross domestic product (GDP) in Canada, its key economic measure [[5]](#5).
 
 
 ## Research Objectives
