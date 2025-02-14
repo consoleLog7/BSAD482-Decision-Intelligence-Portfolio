@@ -3,12 +3,10 @@
 
 By: Logan Pugsley
 
-
 ## Problem Context
 Canada is currently experiencing a serious nationwide housing crisis. Many Canadian residents from coast-to-coast are struggling to find places to live, and to afford the few places that are available to live in. Most Canadians can feel the pressure that comes with rising prices (whether they are home owners or housing renters), growing demand, and an inadequate supply in the housing market. This sentiment is outlined in countless reports that show since April of 2020, the onset of the global Covid-19 pandemic, housing prices have risen by more than 30% on average across Canada [[1]](#1). Although the short-term consequences that come from housing pressures (such as quality-of-life and public health implications) are serious, the long-term consequences that could come from not solving this issue quickly could be even worse. In April 2024, the Royal Bank of Canada (RBC) reported that only 26% of Canadians had the financial means to own a single-detached home, given the interest rates and prices at the time [[2]](#2). RBC also estimated that by 2030, more than half of the 1.9 million new households in Canada will not be able to buy a home, furthermore, 40% of that half of households also won't be able to afford rent at the projected market price [[3]](#3).
 
-The housing crisis stems from several converging factors, for example, supply chain challenges for building materials, a rapidly growing Canadian population, rising income inequality, trends toward living in major cities, higher-than-usual interest rates, and regulatory barriers that discourage housing development. This decision intelligence analysis of this complex issue aims to explore the data behind these many factors, to uncover which indicators are most contributing to Canada's rising housing costs, and to understand how the convergance of various indicators has created the current housing crisis Canada faces.
-
+The housing crisis stems from several converging factors, for example, supply chain challenges for building materials, a rapidly growing Canadian population, rising income inequality, trends toward living in major cities, higher-than-usual interest rates, and regulatory barriers that discourage housing development. This analysis of this complex issue aims to explore the data behind these many factors, to uncover which indicators are most contributing to Canada's rising housing costs, and to understand how the convergance of various indicators has created the current housing crisis Canada faces.
 
 ## Significance of the Study
 This decision intelligence analysis is both timely and crucial for several reasons:
