@@ -47,7 +47,7 @@ This project examines Canada's housing crisis from the perspective of UN Sustain
    - Where vacant space is the sum of available, apartment, office or industrial market space
    - Vacant space excludes retail and below grade space
    - Technical Details
-      - Frequency: Annualy
+      - Frequency: Annually
       - Range: 1990 - Present
 
 5. Homelessness Rate
