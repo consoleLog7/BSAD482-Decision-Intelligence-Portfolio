@@ -62,18 +62,23 @@ This project examines Canada's housing crisis from the perspective of UN Sustain
 </a>
 
 1. New Housing Price Index (NHPI)
+
    The NHPI fluctuates over time with the economy and housing market, however significant spikes were observed in both 2006 and in 2021, indicating rapid price increases during those periods. In 2008, during the global financial crisis, a notable decrease was seen in the NHPI, indicating that prices decreased greatly in that period. There is a slight decrease in 2023/2024 coming out of the Covid-19 global pandemic, but not as drastic of a return as seen in 2008. Overall, this KPI indicates that external factors, like economic recessions and housing policy changes have influences on housing prices.
 
 2. Housing Affordability Index (HAI)
+
    The HAI is another index that fluctuates over time, but indicates how much a median-income household spends toward housing-related costs compared to their overall income. Generally, financial planners suggest that households put approximately 30% of their disposable income towards housing, to be able to live financially stable. As indicated in the visualization, from 1995 to 2019, the HAI hovered around 30%, however, since 2020 there have been sharp increases, reaching as much as 55%. This indicates that households across Canada are being forced to pay more for their housing, leaving them less disposable income to pay for groceries, entertainment, and save for their long-term financial goals.
 
 3. Percentage Change in Construction Materials Cost
+
    The visualization for the percentage change in construction materials cost shows rapid prices increases in 2020 and 2021 as the Covid-19 pandemic created a major supply chain disruption for raw materials. Interestingly, this increase correlates to the exact same time that both the the NHPI and the HAI saw tremendous increases, indicating that the price of construction materials is a key driver for both the supply of housing, and the price of that supply. These higher construction material costs have contributed to increased housing prices, making new construction and housing affordability key issues inside of Canada's housing crisis.
 
 4. Yearly Population Growth
+
    For the 80 years shown on the yearly population growth visualization, Canada has seen relatively steady increases to its population, as it encourages immigration for people to move to the wonderful country. After decades of stability, there was a massive spike in Canada's population beginning in 2023, with over one million newcomers to Canada each year. This population growth was driven and encouraged by changes to the Government of Canada's immigration policies. Although population growth can be a good way to help grow economies, in terms of Canada's housing crisis, the rapid population increases seen since 2023 have dramatically increased housing demand, putting extreme pressure on an already weak supply of housing, thus increasing prices and affecting affordability.
 
 5. Total Housing Investment
+
    The total housing investment indicator's visualization shows steady increases in investment over time in Canada's housing market, with a notable increase since 2020. This trend indicates that although there are affordability concerns for construction materials, money is still flowing into the housing market. This increased investment could indicate various efforts to address supply shortages for housing, but still may not be enough to meet increased demand and offset affordability challenges.
 
 
