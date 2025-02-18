@@ -5,7 +5,7 @@
 - [X] On paper, draw a storyboard of what you hope to visualize.  You may have to play around with the data to see the notable trends, but start with a pencil and paper.  This helps highlight the data you will need to curate to get the target dataset.
 - [X] Let's get a few visualizations started
 
-- [ ] Update KPIs descriptions on README.md
+- [X] Update KPIs descriptions on README.md
 - [ ] Add description paragraphs for each KPI underneath the visualization
 - [ ] Upload other draft visualizations for evidence
 - [ ] Update Wrangling.md file
