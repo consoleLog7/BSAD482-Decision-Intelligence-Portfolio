@@ -5,15 +5,14 @@
 By: Logan Pugsley
 
 ## Visualizations
+![Housing Prices and Affordability](img/CanadaHousingPricesAndAffordability.png)
 
-![Housing Prices and Affordability](img/Canada Housing Prices and Affordability.png)
+![Mortgage Holder Analysis](img/CanadianMortgageHolderAnalysis.png)
 
-![Mortgage Holder Analysis](img/Canadian Mortgage Holder Analysis.png)
+![Housing Investment](img/HousingInvestmentInCanada.png)
 
-![Housing Investment](img/Housing Investment in Canada.png)
+![Construction Materials Analysis](img/CanadaConstructionMaterialsAnalysis.png)
 
-![Construction Materials Analysis](img/Canada Construction Materials Analysis.png)
+![Population Analysis](img/CanadaPopulationAnalysis.png)
 
-![Population Analysis](img/Canada Population Analysis.png)
-
-![Economic Analysis](img/Canada Economic Analysis.png)
+![Economic Analysis](img/CanadaEconomicAnalysis.png)
