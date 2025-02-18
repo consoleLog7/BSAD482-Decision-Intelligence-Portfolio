@@ -1,0 +1,1713 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1211.0901                               -->
+<workbook original-version='18.1' source-build='2024.3.2 (20243.24.1211.0901)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.IndividualControlFormatting.true...IndividualControlFormatting />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='MortgageConsumerDataAggregation Extract' inline='true' name='federated.16it75n0s3vl4t1gu8gb40wyzo31' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='MortgageConsumerDataAggregation' name='hyper.0bqho0m12l6oki1ei8zlb1vkj9x1'>
+            <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/logan/Library/Mobile Documents/com~apple~CloudDocs/StFX/S2/482 Project/BSAD482-Decision-Intelligence-Portfolio/data/Processed Data/MortgageConsumerDataAggregation.hyper' default-settings='yes' server='' sslmode='' username='tableau_internal_user' />
+          </named-connection>
+          <named-connection caption='New Mortgage Loan Value and Delinquency Rates' name='hyper.0dz4lv51ba2nhs16nz10m1sm1gpm'>
+            <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/logan/Library/Mobile Documents/com~apple~CloudDocs/StFX/S2/482 Project/BSAD482-Decision-Intelligence-Portfolio/data/Processed Data/New Mortgage Loan Value and Delinquency Rates.hyper' default-settings='yes' server='' sslmode='' username='tableau_internal_user' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='hyper.0bqho0m12l6oki1ei8zlb1vkj9x1' name='Extract' table='[Extract].[Extract]' type='table' />
+          <relation connection='hyper.0dz4lv51ba2nhs16nz10m1sm1gpm' name='Extract1' table='[Extract].[Extract]' type='table' />
+        </relation>
+        <cols>
+          <map key='[Average credit score - Without mortgage]' value='[Extract].[Average credit score - Without mortgage]' />
+          <map key='[Date (Extract1)]' value='[Extract1].[Date]' />
+          <map key='[Date]' value='[Extract].[Date]' />
+          <map key='[Delinquency Rate]' value='[Extract1].[Delinquency Rate]' />
+          <map key='[Location]' value='[Extract1].[Location]' />
+          <map key='[New Mortgage Loan Value]' value='[Extract1].[New Mortgage Loan Value]' />
+          <map key='[Share of consumers who experienced a credit score degrade Mortgage holders]' value='[Extract].[Share of consumers who experienced a credit score degrade Mortgage holders]' />
+          <map key='[Share of consumers who experienced a credit score degrade Without mortgage]' value='[Extract].[Share of consumers who experienced a credit score degrade Without mortgage]' />
+          <map key='[Share of consumers with a mortgage loan]' value='[Extract].[Share of consumers with a mortgage loan]' />
+          <map key='[Share of consumers without a mortgage with new bankruptcy (per 1000 - left axis)]' value='[Extract].[Share of consumers without a mortgage with new bankruptcy (per 1000 - left axis)]' />
+          <map key='[Share of mortgage holders with a high likelihood of bankruptcy (%)]' value='[Extract].[Share of mortgage holders with a high likelihood of bankruptcy (%)]' />
+          <map key='[Share of mortgage holders with new bankruptcy (per 1000 - left axis)]' value='[Extract].[Share of mortgage holders with new bankruptcy (per 1000 - left axis)]' />
+          <map key='[Share of new mortgage loan amount  held by consumers with a low credit score (below 600)]' value='[Extract].[Share of new mortgage loan amount  held by consumers with a low credit score (below 600)]' />
+          <map key='[Share of new mortgage loan amount held by consumers with a highcredit score (700+)]' value='[Extract].[Share of new mortgage loan amount held by consumers with a highcredit score (700+)]' />
+          <map key='[Share of new mortgage loans  held by consumers with a low credit score (below 600)]' value='[Extract].[Share of new mortgage loans  held by consumers with a low credit score (below 600)]' />
+          <map key='[Share of new mortgage loans held by consumers with a highcredit score (700+)]' value='[Extract].[Share of new mortgage loans held by consumers with a highcredit score (700+)]' />
+          <map key='[Share of outstanding loan amount  held by consumers with a low credit score (below 600)]' value='[Extract].[Share of outstanding loan amount  held by consumers with a low credit score (below 600)]' />
+          <map key='[Share of outstanding loan amount held by consumers with a highcredit score (700+)]' value='[Extract].[Share of outstanding loan amount held by consumers with a highcredit score (700+)]' />
+          <map key='[Share of outstanding loans held by consumers with a highcredit score (700+)]' value='[Extract].[Share of outstanding loans held by consumers with a highcredit score (700+)]' />
+          <map key='[Share of outstanding loans held by consumers with a low credit score (below 600)]' value='[Extract].[Share of outstanding loans held by consumers with a low credit score (below 600)]' />
+          <map key='[average credit score - With mortgage]' value='[Extract].[average credit score - With mortgage]' />
+          <map key='[average credit score - With new mortgage]' value='[Extract].[average credit score - With new mortgage]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>17</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_8B82B9F3EF1F47C192B83222CB2C0954]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Share of consumers without a mortgage with new bankruptcy (per 1000 - left axis)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Share of consumers without a mortgage with new bankruptcy (per 1000 - left axis)]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Share of consumers without a mortgage with new bankruptcy (per 1000 - left axis)</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>13</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_8B82B9F3EF1F47C192B83222CB2C0954]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Share of mortgage holders with new bankruptcy (per 1000 - left axis)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Share of mortgage holders with new bankruptcy (per 1000 - left axis)]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Share of mortgage holders with new bankruptcy (per 1000 - left axis)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>14</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_8B82B9F3EF1F47C192B83222CB2C0954]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Share of outstanding loans held by consumers with a highcredit score (700+)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Share of outstanding loans held by consumers with a highcredit score (700+)]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Share of outstanding loans held by consumers with a highcredit score (700+)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>16</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_8B82B9F3EF1F47C192B83222CB2C0954]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Share of outstanding loan amount held by consumers with a highcredit score (700+)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Share of outstanding loan amount held by consumers with a highcredit score (700+)]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Share of outstanding loan amount held by consumers with a highcredit score (700+)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>16</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_8B82B9F3EF1F47C192B83222CB2C0954]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Share of new mortgage loans held by consumers with a highcredit score (700+)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Share of new mortgage loans held by consumers with a highcredit score (700+)]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Share of new mortgage loans held by consumers with a highcredit score (700+)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>15</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_8B82B9F3EF1F47C192B83222CB2C0954]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Share of new mortgage loan amount held by consumers with a highcredit score (700+)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Share of new mortgage loan amount held by consumers with a highcredit score (700+)]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Share of new mortgage loan amount held by consumers with a highcredit score (700+)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>17</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_8B82B9F3EF1F47C192B83222CB2C0954]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Share of outstanding loans held by consumers with a low credit score (below 600)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Share of outstanding loans held by consumers with a low credit score (below 600)]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Share of outstanding loans held by consumers with a low credit score (below 600)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>13</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_8B82B9F3EF1F47C192B83222CB2C0954]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Share of outstanding loan amount  held by consumers with a low credit score (below 600)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Share of outstanding loan amount  held by consumers with a low credit score (below 600)]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Share of outstanding loan amount  held by consumers with a low credit score (below 600)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>15</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_8B82B9F3EF1F47C192B83222CB2C0954]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Share of new mortgage loans  held by consumers with a low credit score (below 600)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Share of new mortgage loans  held by consumers with a low credit score (below 600)]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Share of new mortgage loans  held by consumers with a low credit score (below 600)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>13</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_8B82B9F3EF1F47C192B83222CB2C0954]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Share of new mortgage loan amount  held by consumers with a low credit score (below 600)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Share of new mortgage loan amount  held by consumers with a low credit score (below 600)]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Share of new mortgage loan amount  held by consumers with a low credit score (below 600)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>16</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_8B82B9F3EF1F47C192B83222CB2C0954]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average credit score - Without mortgage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Average credit score - Without mortgage]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Average credit score - Without mortgage</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>10</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_8B82B9F3EF1F47C192B83222CB2C0954]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average credit score - With mortgage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[average credit score - With mortgage]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>average credit score - With mortgage</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>7</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_8B82B9F3EF1F47C192B83222CB2C0954]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average credit score - With new mortgage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[average credit score - With new mortgage]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>average credit score - With new mortgage</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>11</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_8B82B9F3EF1F47C192B83222CB2C0954]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Share of mortgage holders with a high likelihood of bankruptcy (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Share of mortgage holders with a high likelihood of bankruptcy (%)]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Share of mortgage holders with a high likelihood of bankruptcy (%)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>14</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_8B82B9F3EF1F47C192B83222CB2C0954]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Share of consumers who experienced a credit score degrade Without mortgage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Share of consumers who experienced a credit score degrade Without mortgage]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Share of consumers who experienced a credit score degrade Without mortgage</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>15</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_8B82B9F3EF1F47C192B83222CB2C0954]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Share of consumers who experienced a credit score degrade Mortgage holders</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Share of consumers who experienced a credit score degrade Mortgage holders]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Share of consumers who experienced a credit score degrade Mortgage holders</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>16</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_8B82B9F3EF1F47C192B83222CB2C0954]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Share of consumers with a mortgage loan</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Share of consumers with a mortgage loan]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Share of consumers with a mortgage loan</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>17</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_8B82B9F3EF1F47C192B83222CB2C0954]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date (Extract1)]</local-name>
+            <parent-name>[Extract1]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>49</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_94B0129327EF45728B7E4D93A9BAB99B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[Extract1]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>45</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <object-id>[Extract (Extract.Extract)_94B0129327EF45728B7E4D93A9BAB99B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Mortgage Loan Value</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[New Mortgage Loan Value]</local-name>
+            <parent-name>[Extract1]</parent-name>
+            <remote-alias>New Mortgage Loan Value</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2162</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <object-id>[Extract (Extract.Extract)_94B0129327EF45728B7E4D93A9BAB99B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delinquency Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Delinquency Rate]</local-name>
+            <parent-name>[Extract1]</parent-name>
+            <remote-alias>Delinquency Rate</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>82</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_94B0129327EF45728B7E4D93A9BAB99B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[avg:Delinquency Rate:qk]&quot;' value='Delinquency Rate' />
+          <alias key='&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[avg:New Mortgage Loan Value:qk]&quot;' value='Mortgage Value' />
+          <alias key='&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[sum:Share of consumers without a mortgage with new bankruptcy (per 1000 - left axis):qk]&quot;' value='No Mortgage' />
+          <alias key='&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[sum:Share of mortgage holders with new bankruptcy (per 1000 - left axis):qk]&quot;' value='Mortgage' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Average credit score - Without mortgage]' role='measure' type='quantitative' />
+      <column datatype='date' name='[Date]' role='dimension' type='quantitative' />
+      <column datatype='real' name='[Delinquency Rate]' role='measure' type='quantitative' />
+      <column aggregation='CountD' datatype='real' datatype-customized='true' name='[New Mortgage Loan Value]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Share of consumers who experienced a credit score degrade Mortgage holders]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Share of consumers who experienced a credit score degrade Without mortgage]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Share of consumers with a mortgage loan]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Share of consumers without a mortgage with new bankruptcy (per 1000 - left axis)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Share of mortgage holders with a high likelihood of bankruptcy (%)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Share of mortgage holders with new bankruptcy (per 1000 - left axis)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Share of new mortgage loan amount  held by consumers with a low credit score (below 600)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Share of new mortgage loan amount held by consumers with a highcredit score (700+)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Share of new mortgage loans  held by consumers with a low credit score (below 600)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Share of new mortgage loans held by consumers with a highcredit score (700+)]' role='measure' type='quantitative' />
+      <column caption='Extract' datatype='table' name='[__tableau_internal_object_id__].[Extract (Extract.Extract)_8B82B9F3EF1F47C192B83222CB2C0954]' role='measure' type='quantitative' />
+      <column caption='Extract1' datatype='table' name='[__tableau_internal_object_id__].[Extract (Extract.Extract)_94B0129327EF45728B7E4D93A9BAB99B]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[average credit score - With mortgage]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[average credit score - With new mortgage]' role='measure' type='quantitative' />
+      <column-instance column='[Delinquency Rate]' derivation='Avg' name='[avg:Delinquency Rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[New Mortgage Loan Value]' derivation='Avg' name='[avg:New Mortgage Loan Value:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Average credit score - Without mortgage]' derivation='Sum' name='[sum:Average credit score - Without mortgage:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Share of consumers who experienced a credit score degrade Mortgage holders]' derivation='Sum' name='[sum:Share of consumers who experienced a credit score degrade Mortgage holders:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Share of consumers who experienced a credit score degrade Without mortgage]' derivation='Sum' name='[sum:Share of consumers who experienced a credit score degrade Without mortgage:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Share of consumers with a mortgage loan]' derivation='Sum' name='[sum:Share of consumers with a mortgage loan:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Share of consumers without a mortgage with new bankruptcy (per 1000 - left axis)]' derivation='Sum' name='[sum:Share of consumers without a mortgage with new bankruptcy (per 1000 - left axis):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Share of mortgage holders with a high likelihood of bankruptcy (%)]' derivation='Sum' name='[sum:Share of mortgage holders with a high likelihood of bankruptcy (%):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Share of mortgage holders with new bankruptcy (per 1000 - left axis)]' derivation='Sum' name='[sum:Share of mortgage holders with new bankruptcy (per 1000 - left axis):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Share of new mortgage loan amount  held by consumers with a low credit score (below 600)]' derivation='Sum' name='[sum:Share of new mortgage loan amount  held by consumers with a low credit score (below 600):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Share of new mortgage loan amount held by consumers with a highcredit score (700+)]' derivation='Sum' name='[sum:Share of new mortgage loan amount held by consumers with a highcredit score (700+):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Share of new mortgage loans  held by consumers with a low credit score (below 600)]' derivation='Sum' name='[sum:Share of new mortgage loans  held by consumers with a low credit score (below 600):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Share of new mortgage loans held by consumers with a highcredit score (700+)]' derivation='Sum' name='[sum:Share of new mortgage loans held by consumers with a highcredit score (700+):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[average credit score - With mortgage]' derivation='Sum' name='[sum:average credit score - With mortgage:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[average credit score - With new mortgage]' derivation='Sum' name='[sum:average credit score - With new mortgage:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[avg:Delinquency Rate:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[sum:Average credit score - Without mortgage:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[sum:Share of new mortgage loan amount  held by consumers with a low credit score (below 600):qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[sum:Share of consumers who experienced a credit score degrade Mortgage holders:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[sum:Share of new mortgage loans held by consumers with a highcredit score (700+):qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[sum:Share of consumers with a mortgage loan:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[sum:Share of mortgage holders with new bankruptcy (per 1000 - left axis):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[sum:average credit score - With new mortgage:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[sum:Share of new mortgage loans  held by consumers with a low credit score (below 600):qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[sum:Share of consumers who experienced a credit score degrade Without mortgage:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[avg:New Mortgage Loan Value:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[sum:average credit score - With mortgage:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[sum:Share of consumers without a mortgage with new bankruptcy (per 1000 - left axis):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[sum:Share of new mortgage loan amount held by consumers with a highcredit score (700+):qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[sum:Share of mortgage holders with a high likelihood of bankruptcy (\%):qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Extract' id='Extract (Extract.Extract)_8B82B9F3EF1F47C192B83222CB2C0954'>
+            <properties context=''>
+              <relation connection='hyper.0bqho0m12l6oki1ei8zlb1vkj9x1' name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+          <object caption='Extract1' id='Extract (Extract.Extract)_94B0129327EF45728B7E4D93A9BAB99B'>
+            <properties context=''>
+              <relation connection='hyper.0dz4lv51ba2nhs16nz10m1sm1gpm' name='Extract1' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Date]' />
+              <expression op='[Date (Extract1)]' />
+            </expression>
+            <first-end-point object-id='Extract (Extract.Extract)_8B82B9F3EF1F47C192B83222CB2C0954' />
+            <second-end-point object-id='Extract (Extract.Extract)_94B0129327EF45728B7E4D93A9BAB99B' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_1751A671F7804DF5ABE76C093F214866]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Canadian Mortgage Holder Analysis' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Canadian Mortgage Holder Analysis' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Bankruptcies for Mortgage Holders vs Non-Mortgage Holders'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MortgageConsumerDataAggregation Extract' name='federated.16it75n0s3vl4t1gu8gb40wyzo31' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16it75n0s3vl4t1gu8gb40wyzo31'>
+            <column datatype='date' name='[Date]' role='dimension' type='quantitative' />
+            <column datatype='real' name='[Share of consumers without a mortgage with new bankruptcy (per 1000 - left axis)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Share of mortgage holders with new bankruptcy (per 1000 - left axis)]' role='measure' type='quantitative' />
+            <column-instance column='[Share of consumers without a mortgage with new bankruptcy (per 1000 - left axis)]' derivation='Sum' name='[sum:Share of consumers without a mortgage with new bankruptcy (per 1000 - left axis):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Share of mortgage holders with new bankruptcy (per 1000 - left axis)]' derivation='Sum' name='[sum:Share of mortgage holders with new bankruptcy (per 1000 - left axis):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Quarter-Trunc' name='[tqr:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[sum:Share of consumers without a mortgage with new bankruptcy (per 1000 - left axis):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[sum:Share of mortgage holders with new bankruptcy (per 1000 - left axis):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[sum:Share of mortgage holders with new bankruptcy (per 1000 - left axis):qk]&quot;</bucket>
+              <bucket>&quot;[federated.16it75n0s3vl4t1gu8gb40wyzo31].[sum:Share of consumers without a mortgage with new bankruptcy (per 1000 - left axis):qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.16it75n0s3vl4t1gu8gb40wyzo31].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[tqr:Date:qk]' scope='cols' value='Year/Quarter' />
+            <format attr='title' class='0' field='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[Multiple Values]' scope='rows' value='Share per 1,000 People' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend'>
+            <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[:Measure Names]' id='legend-color' value='8' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='text-align' field='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[:Measure Names]' id='legend-color' value='left' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[:Measure Names]' value='Legend'>
+              <formatted-text>
+                <run>Legend</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.16it75n0s3vl4t1gu8gb40wyzo31].[Multiple Values]</rows>
+        <cols>[federated.16it75n0s3vl4t1gu8gb40wyzo31].[tqr:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{601C4F30-874B-4EA3-871C-C212DCC75599}' />
+    </worksheet>
+    <worksheet name='Mortgage Holder Credit Score Degrades'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MortgageConsumerDataAggregation Extract' name='federated.16it75n0s3vl4t1gu8gb40wyzo31' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16it75n0s3vl4t1gu8gb40wyzo31'>
+            <column datatype='date' name='[Date]' role='dimension' type='quantitative' />
+            <column datatype='real' name='[Share of consumers who experienced a credit score degrade Mortgage holders]' role='measure' type='quantitative' />
+            <column-instance column='[Share of consumers who experienced a credit score degrade Mortgage holders]' derivation='Sum' name='[sum:Share of consumers who experienced a credit score degrade Mortgage holders:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Quarter-Trunc' name='[tqr:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[tqr:Date:qk]' scope='cols' value='Year/Quarter' />
+            <format attr='title' class='0' field='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[sum:Share of consumers who experienced a credit score degrade Mortgage holders:qk]' scope='rows' value='% of mortgages with credit score degrade' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.16it75n0s3vl4t1gu8gb40wyzo31].[sum:Share of consumers who experienced a credit score degrade Mortgage holders:qk]</rows>
+        <cols>[federated.16it75n0s3vl4t1gu8gb40wyzo31].[tqr:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{828FD8D9-49C5-4D09-BAE3-760E670B47FB}' />
+    </worksheet>
+    <worksheet name='Mortgage Value vs Delinquency Rate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MortgageConsumerDataAggregation Extract' name='federated.16it75n0s3vl4t1gu8gb40wyzo31' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16it75n0s3vl4t1gu8gb40wyzo31'>
+            <column datatype='date' name='[Date (Extract1)]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Delinquency Rate]' role='measure' type='quantitative' />
+            <column aggregation='CountD' datatype='real' datatype-customized='true' name='[New Mortgage Loan Value]' role='measure' type='quantitative' />
+            <column-instance column='[Delinquency Rate]' derivation='Avg' name='[avg:Delinquency Rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[New Mortgage Loan Value]' derivation='Avg' name='[avg:New Mortgage Loan Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date (Extract1)]' derivation='Quarter-Trunc' name='[tqr:Date (Extract1):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[avg:New Mortgage Loan Value:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[avg:Delinquency Rate:qk]' scope='rows' value='Mortgage Delinquency Rate' />
+            <format attr='title' class='0' field='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[tqr:Date (Extract1):qk]' scope='cols' value='Date' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[avg:New Mortgage Loan Value:qk]' value='#f5ead7' />
+            <format attr='background-color' field='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[avg:Delinquency Rate:qk]' value='#e6ecf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[avg:Delinquency Rate:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[avg:New Mortgage Loan Value:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.16it75n0s3vl4t1gu8gb40wyzo31].[avg:Delinquency Rate:qk] + [federated.16it75n0s3vl4t1gu8gb40wyzo31].[avg:New Mortgage Loan Value:qk])</rows>
+        <cols>[federated.16it75n0s3vl4t1gu8gb40wyzo31].[tqr:Date (Extract1):qk]</cols>
+      </table>
+      <simple-id uuid='{7FD71DEC-D266-4D58-ABAC-760F0EEEBFC4}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Canadian Mortgage Holder Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='28'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='19' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+              <zone h='7375' id='7' type-v2='title' w='98400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='280' h='36000' id='17' is-fixed='true' name='Mortgage Value vs Delinquency Rate' w='98400' x='800' y='8375'>
+                <layout-cache minheight='199' minwidth='234' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8250' id='20' name='Mortgage Value vs Delinquency Rate' pane-specification-id='3' param='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[:Measure Names]' type-v2='color' w='98400' x='800' y='44375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='46375' id='6' type-v2='layout-basic' w='98400' x='800' y='52625'>
+                <zone h='41374' id='10' name='Bankruptcies for Mortgage Holders vs Non-Mortgage Holders' w='49200' x='800' y='52625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='46375' id='14' name='Mortgage Holder Credit Score Degrades' w='49200' x='50000' y='52625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='5001' id='13' leg-item-layout='grid' name='Bankruptcies for Mortgage Holders vs Non-Mortgage Holders' pane-specification-id='2' param='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[:Measure Names]' type-v2='color' w='49200' x='800' y='93999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='28'>&lt;Sheet Name&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='24' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='23' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='7375' id='7' type-v2='title' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36000' id='17' is-fixed='true' name='Mortgage Value vs Delinquency Rate' w='98400' x='800' y='8375'>
+                  <layout-cache minheight='199' minwidth='234' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8250' id='20' name='Mortgage Value vs Delinquency Rate' pane-specification-id='3' param='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[:Measure Names]' type-v2='color' w='98400' x='800' y='44375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41374' id='10' is-fixed='true' name='Bankruptcies for Mortgage Holders vs Non-Mortgage Holders' w='49200' x='800' y='52625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5001' id='13' leg-item-layout='grid' name='Bankruptcies for Mortgage Holders vs Non-Mortgage Holders' pane-specification-id='2' param='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[:Measure Names]' type-v2='color' w='49200' x='800' y='93999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46375' id='14' is-fixed='true' name='Mortgage Holder Credit Score Degrades' w='49200' x='50000' y='52625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{6857E18F-3664-4063-AEA1-23A370193026}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Canadian Mortgage Holder Analysis'>
+      <viewpoints>
+        <viewpoint name='Bankruptcies for Mortgage Holders vs Non-Mortgage Holders'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[:Measure Names]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Mortgage Holder Credit Score Degrades'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Mortgage Value vs Delinquency Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{2F42C02B-2EC6-4278-B6BB-C4EA9916AF0F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Bankruptcies for Mortgage Holders vs Non-Mortgage Holders'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16it75n0s3vl4t1gu8gb40wyzo31].[:Measure Names]</field>
+            <field>[federated.16it75n0s3vl4t1gu8gb40wyzo31].[none:Quarter:qk]</field>
+            <field>[federated.16it75n0s3vl4t1gu8gb40wyzo31].[none:Year:ok]</field>
+            <field>[federated.16it75n0s3vl4t1gu8gb40wyzo31].[none:Year:qk]</field>
+            <field>[federated.16it75n0s3vl4t1gu8gb40wyzo31].[tyr:Date:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0C2E35A6-B1CA-4441-8236-A85E25570C8E}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Mortgage Holder Credit Score Degrades'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16it75n0s3vl4t1gu8gb40wyzo31].[:Measure Names]</field>
+            <field>[federated.16it75n0s3vl4t1gu8gb40wyzo31].[none:Quarter:qk]</field>
+            <field>[federated.16it75n0s3vl4t1gu8gb40wyzo31].[none:Year:ok]</field>
+            <field>[federated.16it75n0s3vl4t1gu8gb40wyzo31].[none:Year:qk]</field>
+            <field>[federated.16it75n0s3vl4t1gu8gb40wyzo31].[qr:Date:qk]</field>
+            <field>[federated.16it75n0s3vl4t1gu8gb40wyzo31].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2D678FFC-A470-47DD-B648-14A23C60447B}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Mortgage Value vs Delinquency Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.16it75n0s3vl4t1gu8gb40wyzo31].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16it75n0s3vl4t1gu8gb40wyzo31].[yr:Date (Extract1):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7011143E-486E-4D9F-A21D-179DEC51E0CA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Canadian Mortgage Holder Analysis' width='384'>
+      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
+      M3EJBAJBa1xUABYsWMCWLVtctu3du5ff//731NXVtetCZ86caX/tfiFLly51SfsmSVKzZOcX
+      0lKc9I5mwYIFPPXUUzz33HOsX78eSZIuWn7z5s3s3LnT+XdTgurrhQULFrBgwQL++Mc/snz5
+      8kuKWX5+/mWn7xMIBK1zUQGor69vlvJv3bp12O32dudxvTBx9dXAzc3NJa/r4cOHUSqvvUGP
+      2WzmnXfeYeHChZw6dapdz2r06NEMHjy4A2t35TGbzSxdupTFixcjyzKffPLJRcuvWrXKmStV
+      IBBcOS6aD8DNzY3g4GCKioqIiIjAaDRitVpdMtR88cUXpKSkoFarue+++xgxYgRpaWkolUoO
+      Hz5MTk4OISEhZGdn89xzz+Hh4cGiRYswGAz84x//oKqqCo1Gw7Bhw5g2bRo7duxg3bp1KJVK
+      unTpwh//+EfUajUpKSmsXbsWNzc3JEni//7v/3B3d2fFihUcPHgQpVLJY489RlxcnLNud9xx
+      B1988YUzH+a2bdsYN24cAP/+97+dGYlGjhzJrFmzXO49JSWFgIAA+vXrB8A///lPfv/739PQ
+      0MCbb75JTU0NOp2OP/7xj87UcjU1NXzxxRf87ne/AyArK4uzZ8/Sp08fZ/o6b29vFi1a1GJI
+      Xn9/f5555hkee+wxKioqnMkcWrs/cIR/9fDw4JZbbmHFihUYjUays7MxmUwsWLCAXr16YTQa
+      effddykrK0OtVjN8+HCmTZvGe++9xxNPPAHA1q1b6dq1K7169SItLY0VK1ag0WiYMGECEydO
+      JC0tjfT0dM6dO4fRaGTy5MlMnToVm83GRx99xJkzZ1CpVDz++ONs2LCBp59+GnAkn967dy/3
+      339/i5+vWbNm8cwzzzjLvv/++0iShEql4g9/+ANpaWns2bOH4uJidDodTz31FP7+/q2+A4FA
+      0HYumRBm4sSJbNmyhblz55KSksKYMWOcverjx49z7Ngx3n//fRobG5k/fz79+/enurqazz77
+      jF/96lcsXrwYlUpFTk4Of/vb35znffvttxk1ahS33347Z86c4fvvvwcceVeXLFmCSqXiww8/
+      ZM+ePc68qW+++SY6nY5nn30WSZI4evQo+fn5LF26lJqaGl588UVnQwuOBMvnzp3DZrOhUqk4
+      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
+      //ldgbrzcQQCAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
