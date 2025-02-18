@@ -4,7 +4,13 @@
 
 By: Logan Pugsley
 
-## Summary of Data Wrangling
+## Summary of Data Wrangling Files
+Source Data: data/Source Data
+Data Wrangling Flows: src/Tableau Prep Flows
+Processed Data: data/Processed Data
+
+
+## Written Summary of Data Wrangling
 
 To complete the data wrangling for this project, three Tableau Prep flows were created to transform all source data into a more simple and consistent format that could be used for analysis. The three flows were called "Economics", "MortgageTableauPrep", and "StatsCanFlow" to account for the types of data mainly transformed within them. All three flows can be found under /src/TableauPrepFlows.
 
