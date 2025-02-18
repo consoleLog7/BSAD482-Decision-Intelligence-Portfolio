@@ -6,9 +6,9 @@
 - [X] Let's get a few visualizations started
 
 - [X] Update KPIs descriptions on README.md
-- [ ] Add description paragraphs for each KPI underneath the visualization
-- [ ] Upload other draft visualizations for evidence
-- [ ] Update Wrangling.md file
+- [X] Add description paragraphs for each KPI underneath the visualization
+- [X] Upload other draft visualizations for evidence
+- [X] Update Wrangling.md file
     - Include:
         - Handling missing values (e.g. imputation, removal)
         - Removing duplicates
