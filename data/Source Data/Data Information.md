@@ -1,3 +1,14 @@
+https://www.bankofcanada.ca/rates/indicators/capacity-and-inflation-pressures/
+https://www150.statcan.gc.ca/n1/en/subjects/housing/
+https://www.bankofcanada.ca/rates/indicators/capacity-and-inflation-pressures/real-estate-market-definitions/
+https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/housing-data
+https://www.oecd.org/en/data/datasets/oecd-affordable-housing-database.html
+
+
+
+
+
+
 data/real-median-household-income-after-tax-tenure-2006-2022-en.xlsx
     These data tables focus on the real median total household income (after-taxes). They summarize the changes in after-tax household income by:
 
