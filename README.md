@@ -10,17 +10,17 @@ This project examines Canada's housing crisis from the perspective of UN Sustain
 
 
 ## Table of Contents
-1. ([Executive Summary](#executive-summary))
+1. [Executive Summary](#executive-summary)
 
-2. ([Background](#background))
+2. [Background](#background)
 
-3. ([Key Performance Indicators (KPIs)](#key-performance-indicators-kpis))
+3. [Key Performance Indicators (KPIs)](#key-performance-indicators-kpis)
 
-4. ([Analysis of Key Performance Indicators (KPIs)](#analysis-of-key-performance-indicators-kpis))
+4. [Analysis of Key Performance Indicators (KPIs)](#analysis-of-key-performance-indicators-kpis)
 
-5. ([Statistical Learning](#statistical-learning))
+5. [Statistical Learning](#statistical-learning)
 
-6. ([Conclusion](#conclusion))
+6. [Conclusion](#conclusion)
 
 
 ## Background
