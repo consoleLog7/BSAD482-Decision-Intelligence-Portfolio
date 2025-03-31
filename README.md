@@ -99,7 +99,7 @@ This project examines Canada's housing crisis from the perspective of UN Sustain
    The total housing investment indicator's visualization shows steady increases in investment over time in Canada's housing market, with a notable increase since 2020. This trend indicates that although there are affordability concerns for construction materials, money is still flowing into the housing market. This increased investment could indicate various efforts to address supply shortages for housing, but still may not be enough to meet increased demand and offset affordability challenges.
 
 
-[For more visualizations currently in draft, click here](Visualizations.md)
+[For additional visualizations related to these KPIs, click here](Visualizations.md)
 
 
 ## Statistical Learning
