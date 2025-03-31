@@ -8,7 +8,24 @@ By: Logan Pugsley
 
 This project examines Canada's housing crisis from the perspective of UN Sustainable Development Goal 11 (Sustainable Cities and Communities). Using open data that contains relevant data for various housing indicators and inputs, we aim to identify the key factors driving housing affordability, supply, and demand. Our analysis will use various data analytics, data visualization, and decision intelligence techniques to uncover insights about housing market trends, affordability gaps, and potential policy interventions.
 
+
+## Table of Contents
+1. Executive Summary
+
+2. Background
+
+2. Key Performance Indicators (KPIs)
+
+3. Analysis of Key Performance Indicators (KPIs)
+
+4. Statistical Learning
+
+5. Conclusion
+
+
+## Background
 [Read detailed background information here](Background.md)
+
 
 ## Key Performance Indicators (KPIs)
 1. New Housing Price Index (NHPI)
@@ -158,8 +175,14 @@ Considering these observations, next, causal models were created, tested, valida
 
 Overall, this statistical learning analyzed KPIs around Canada's housing crisis to better understand how they drive the supply, demand, and price of housing. Using a correlation matrix heatmap and causal inference models, the correlation and causation between each KPI was measured, and analyzed for impact on the overall housing market in Canada.
 
-[To see how data was transformed for this statistical analysis, click here to view the Tableau Prep Flow](statistical_learning/KPIs%20Data%20Combination.tfl)
+[To see how data was transformed for this statistical analysis, click here to view the Tableau Prep Flow](src/Statistical%20Learning/KPIs%20Data%20Combination.tfl)
 
-[To see the data used for this statistical analysis, click here](statistical_learning/Output.csv)
+[To see the data used for this statistical analysis, click here](data/Statistical%20Learning%20Input%20Data/Output.csv)
 
-[To view the full source code for this statistical analysis, click here to view the Jupyter Notebook](statistical_learning/Statistical_Learning_Understanding_Canada's_Housing_Crisis_Drivers_of_Supply,_Demand,_and_Price.ipynb)
+[To view the full source code for this statistical analysis, click here to view the Jupyter Notebook](src/Statistical%20Learning/Statistical_Learning_Understanding_Canada's_Housing_Crisis_Drivers_of_Supply,_Demand,_and_Price.ipynb)
+
+
+## Conclusion
+Overall, this project has examined Canada's housing crisis from the perspective of UN Sustainable Development Goal 11 (Sustainable Cities and Communities). Using open data that contains relevant data for various housing indicators and inputs, we have outlined how the ongoing housing crisis in Canada is an extremely complex issue driven by interconnected factors, each impacting supply, demand, and prices for housing. First, using the open data collected, we provided visual dashboards to outline the current and historical trends of housing key performance indicators (KPIs) in Canada. Then, using advanced statistical learning techniques, we further analyzed the open housing and economic data collected to better understand correlation and causation between the various KPIs.
+
+This analysis has uncovered that rising construction material costs have a significant direct impact on housing prices for Canadians, and that rapid population growth is further increasing demand and straining a limited housing supply. Although housing investment continues to rise in response to rising population and construction material costs, affordability remains a key issue, with the Housing Affordability Index (HAI) reaching critical levels in recent years. The findings uncovered by this analysis have highlighted the need for increased and ongoing policy interventions from governments and regulators across Canada to address housing affordability issues and create sustainable and accessible housing for all Canadians.
