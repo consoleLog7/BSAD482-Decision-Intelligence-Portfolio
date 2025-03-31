@@ -83,3 +83,57 @@ This project examines Canada's housing crisis from the perspective of UN Sustain
 
 
 [For more visualizations currently in draft, click here](Visualizations.md)
+
+
+## Statistical Learning
+Building on the preliminary analysis of Canada's housing crisis and visualization of key performance indicators (KPIs), advanced statistical techniques were also used to better track relationships and interdependencies between KPIs. Specifically, a causal inference and correlation analysis was performed against the housing KPIs and data to enabled a statistical learning of Canada's housing crisis. To recap each of the KPIs studied, these are the KPIs that were included as datapoints within the statistical analysis:
+1. NHPI
+   Average New Housing Price Index (NHPI), measured quarterly.
+2. HAI
+   Average Housing Affordability Index (HAI), measured quarterly.
+3. ConstMat
+   Average percentage change in construction materials cost, measured annually.
+4. Population
+   Difference in Canada's population from previous period, measured annually.
+5. Investment
+   Average total investment across all categories within Canada's housing market, measured annually.
+6. ConstMatLagged
+   To account for lagging impacts of construction materials costs, a lagged field was created to measure the lagged average percentage change in construction materials cost, measured annually.
+
+
+First, a correlation matrix heatmap was created in Python to explore the relationships between the KPIs.
+![Correlation Matrix Heatmap](img/CorrelationMatrix.png)
+There were several key findings identified as a result of this matrix, including:
+- Overall, little correlation between most KPIs
+- The two critical measures of Canada's housing crisis are the NHPI and HAI (datapoints 1 and 2), and those saw the lowest overall correlation out of any of the KPIs
+- Population growth and the lagged percentage change in cost of construction materials (datapoints 4 and 6)were most closely correlated, at +0.84
+- Population growth and investment (datapoints 4 and 5) were the second most correlated, at +0.80
+- The short-term percentage change in cost of construction materials (datapoint 3) was most critical at increasing the NHPI (datapoint 1), and is therefore the highest contributor to increases in the price of housing, with a correlation value of 0.34.
+
+
+Considering these observations, next, causal models were created, tested, validated, and refuted to better understand the causal inference relationships between KPIs. In total, three different models were created, each of which will be outlined below:
+
+1. Canada's Population Growth on % Change in Construction Materials Cost
+   First, the treatment Canada's population growth was measured in a CausalModel() against the percentage change in cost of construction materials as an outcome. The visual graph of the model is indicated below:
+   ![CausalModel1](img/CausalModel1.png)
+   This model found a very little causal effect between changes in population on construction material costs, with a mean value of 4.83e-08, indicating that although the two KPIs are correlated, the causal effect is extremely minimal. Refuting the model by adding a random common cause produced a p-value of 0.94, therefore, doing so did not significantly change the causal estimate produced by the model.
+
+2. Canada's Population Growth on Housing Investment in Canada
+   Next, the second most highly correlated variables were measured in a new CausalModel(), Canada's population growth against the average total investment across all categories of Canada's housing market. The visual graph of the model is indicated below:
+   ![CausalModel2](img/CausalModel2.png)
+   This model found a strong causal effect between changes in population on total housing investment in Canada, with a mean value of 8,624.74. The model found that the degree to which construction material prices were increasing had an impact on this, as when construction material costs were decreasing or remaining steady, the causal effect on housing investment was only 8026.98. In contrast, when constriction material costs were increasing, housing investment increased by 11,115.39. This variation depending on construction material costs makes logical sense, because if costs are higher, building an identical home would contribute more to housing investment if prices were higher for products like lumber.
+
+   To further test this causal model, the model was refuted by adding a random common cause and testing the impact of an unrelated confounder. Before refutation the model had a mean effect of 8,624.74, and after adding a random cause, the mean effect decreased to 8,598.07. This minimal change in effect produced a p-value of 0.98, indicating that the model is highly accurate.
+
+3. % Change in Construction Materials Cost on New Housing Price Index (NHPI)
+   Finally, a third CausalModel() was created to analyze the effect of the percentage change in construction materials cost in Canada on the New Housing Price Index (NHPI) indicator. The NHPI is critical to measuring Canada's housing crisis because it provides a clear measure of how much the contractors who build new residential homes are selling their buildings for. It helps to identify impacts from construction materials and the total costs to build a home. The short-term percentage change in cost of construction materials was most critical at increasing the NHPI out of any of the KPIs, so understanding if correlation equals causation for these KPIs was essential. The visual graph of the model is indicated below:
+   ![CausalModel3](img/CausalModel3.png)
+   This model found a strong causal effect between the percentage change in construction materials costs, and the NHPI in Canada, with the mean increase being 36.58 in the NHPI for each unit increase in percentage change. Therefore, for these two KPIs, correlation certainly does equal causation, and this CausalModel proved that construction materials costs are critical to controlling the price of housing in Canada. 
+
+   To further test this causal model, the model was refuted by adding a randome cause and testing the impact of an unrelated confounder. Before refutation the model had a mean effect of 36.58, and after adding a random cause, the mean effect increased to 36.94. This minimal change in effect produced a p-value of 0.94, indicating that the model is highly accurate.
+
+Overall, this statistical learning analyzed KPIs around Canada's housing crisis to better understand how they drive supply, demand, and the price of housing. Using a correlation matrix heatmap and causal inference models, the correlation and causation between each KPI was measured, and analyzed for impact on the overall housing market in Canada.
+
+[To see how data was transformed for this statistical analysis, click here to view the Tableau Prep Flow](statistical_learning/KPIs%20Data%20Combination.tfl)
+[To see the data used for this statistical analysis, click here](statistical_learning/Output.csv)
+[To view the full source code for this statistical analysis, click here to view the Jupyter Notebook](statistical_learning/Statistical_Learning_Understanding_Canada's_Housing_Crisis_Drivers_of_Supply,_Demand,_and_Price.ipynb)
