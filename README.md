@@ -159,5 +159,7 @@ Considering these observations, next, causal models were created, tested, valida
 Overall, this statistical learning analyzed KPIs around Canada's housing crisis to better understand how they drive supply, demand, and the price of housing. Using a correlation matrix heatmap and causal inference models, the correlation and causation between each KPI was measured, and analyzed for impact on the overall housing market in Canada.
 
 [To see how data was transformed for this statistical analysis, click here to view the Tableau Prep Flow](statistical_learning/KPIs%20Data%20Combination.tfl)
+
 [To see the data used for this statistical analysis, click here](statistical_learning/Output.csv)
+
 [To view the full source code for this statistical analysis, click here to view the Jupyter Notebook](statistical_learning/Statistical_Learning_Understanding_Canada's_Housing_Crisis_Drivers_of_Supply,_Demand,_and_Price.ipynb)
